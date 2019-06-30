@@ -5,8 +5,7 @@ from src.app import create_app
 
 @pytest.fixture
 def app():
-    app = create_app()
-    app.debug = True
+    app = create_app('src.config.TestConfig')
     return app
 
 
