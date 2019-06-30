@@ -1,0 +1,9 @@
+<html>
+    <p>Upload</p>
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        <p>Title: {{form.title}}</p>
+        <p>Author: {{form.author}}</p>
+        <p>{{form.submit}}</p>
+    </form>
+</html>
